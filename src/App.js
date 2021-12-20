@@ -40,7 +40,7 @@ class App extends Component {
         {/* <Ideas name="Ahsoka" blade="green"/>
         <Ideas name="Anakin" blade="blue"/>
         <Ideas name="Mace" blade="purple" /> */}
-        <Ideas />
+        <Ideas ideas={this.state.ideas}/>
       </main>
     )
   }
