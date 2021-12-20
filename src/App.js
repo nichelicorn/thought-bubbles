@@ -36,7 +36,7 @@ class App extends Component {
     return (
       <main className="App">
         <h1>Thought Bubbles</h1>
-        {/* Add Ideas component to the App layout */}
+        {/* Test code for looking at the way props interact between parent / child components */}
         {/* <Ideas name="Ahsoka" blade="green"/>
         <Ideas name="Anakin" blade="blue"/>
         <Ideas name="Mace" blade="purple" /> */}
