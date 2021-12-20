@@ -8,6 +8,7 @@ class App extends Component {
     // Extend all Component methods / properties to the App
     super();
     // this, here, is binding the state, relevant data application, to this component
+    // Calvin and Hobbes quotes from: https://www.gocomics.com/comics/lists/1643203/calvin-and-hobbes-bus-stop-musings
     this.state = {
       ideas: [
         {
