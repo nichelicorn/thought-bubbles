@@ -2,12 +2,14 @@
 // Ideas are created by the user in the form above the card display
 
 import React, { Component } from "react";
+import Ideas from "./Ideas";
+import "./App.css";
 
 class App extends Component {
   constructor() {
     // Extend all Component methods / properties to the App
     super();
-    // this, here, is binding the state, relevant data application, to this component
+    // this, here, is binding the state / relevant data application, to this component
     // Calvin and Hobbes quotes from: https://www.gocomics.com/comics/lists/1643203/calvin-and-hobbes-bus-stop-musings
     this.state = {
       ideas: [
@@ -34,7 +36,8 @@ class App extends Component {
     return (
       <main className="App">
         <h1>Thought Bubbles</h1>
-        <p>This should *not* throw an error 🙉</p>
+        {/* Add Ideas component to the App layout */}
+        <Ideas />
       </main>
     )
   }
