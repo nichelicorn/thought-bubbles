@@ -3,9 +3,15 @@
 import React from "react";
 import "./Ideas.css";
 
-const Ideas = () => {
+const Ideas = (props) => {
+
+  const { name, blade } = props;
+
   return (
-    <h2>Ideas will be displayed here!</h2>
+    <article>
+      <h2>Hello, {name}!</h2>
+      <p>You have a nice {blade} lightsabre there!</p>
+    </article>
   )
 }
 

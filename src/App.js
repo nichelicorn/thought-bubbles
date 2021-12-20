@@ -37,7 +37,9 @@ class App extends Component {
       <main className="App">
         <h1>Thought Bubbles</h1>
         {/* Add Ideas component to the App layout */}
-        <Ideas />
+        <Ideas name="Ahsoka" blade="green"/>
+        <Ideas name="Anakin" blade="blue"/>
+        <Ideas name="Mace" blade="purple" />
       </main>
     )
   }
