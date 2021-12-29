@@ -1,6 +1,6 @@
 // This is the Ideas component, where Idea cards will be displayed
 
-import React, { StrictMode } from "react";
+import React from "react";
 import Card from "./Card.js"
 import "./Ideas.css";
 
