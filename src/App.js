@@ -41,6 +41,8 @@ class App extends Component {
         {/* <Ideas name="Ahsoka" blade="green"/>
         <Ideas name="Anakin" blade="blue"/>
         <Ideas name="Mace" blade="purple" /> */}
+        {/* Conditional rendering based on `this.state` */}
+        {!this.state.ideas.length && <h2>Hey! Add some thoughts to make bubbles 🧼</h2>}
         <Ideas ideas={this.state.ideas}/>
       </main>
     )

@@ -10,11 +10,12 @@ const Ideas = ( {ideas} ) => {
   // console.log("Ideas component ideas", ideas); // logs Array []
   // console.log("typeof ideas", typeof ideas); // logs object
 
-  if (! ideas.length) {
-    return (
-      <h3>Hey! Add some thinky thinks!</h3>
-    )
-  }
+  // Conditional rendering using JS in the component
+  // if (! ideas.length) {
+  //   return (
+  //     <h2>Hey! Add some thinky thinks!</h2>
+  //   )
+  // }
 
   // Test code for looking at the way props interact between parent / child components
   // const { name, blade } = props;
