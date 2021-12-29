@@ -2,6 +2,7 @@
 // Ideas are created by the user in the form above the card display
 
 import React, { Component } from "react";
+import Form from "./Form";
 import Ideas from "./Ideas";
 import "./App.css";
 
@@ -37,6 +38,7 @@ class App extends Component {
     return (
       <main className="App">
         <h1>Thought Bubbles</h1>
+        <Form></Form>
         {/* Test code for looking at the way props interact between parent / child components */}
         {/* <Ideas name="Ahsoka" blade="green"/>
         <Ideas name="Anakin" blade="blue"/>
