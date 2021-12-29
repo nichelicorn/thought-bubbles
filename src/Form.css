@@ -1,0 +1,12 @@
+/* Styles for the Form component */
+
+form {
+  margin: auto;
+}
+
+input, button {
+  margin: 5px;
+  width: 30%;
+  border: 2px solid salmon;
+  font-size: 18px;
+}
