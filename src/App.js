@@ -38,6 +38,14 @@ class App extends Component {
     this.setState({ ideas: [...this.state.ideas, newIdea] });
   }
 
+  deleteIdea = ( id ) => {
+    // delete idea from state based on id
+    // console.log("id <>>>", id);
+    const filteredIdeas = this.state.ideas.filter (idea => idea.id != id);
+
+    this.setState({ ideas: filteredIdeas });
+  }
+
   render() {
     return (
       <main className="App">
@@ -49,7 +57,7 @@ class App extends Component {
         <Ideas name="Mace" blade="purple" /> */}
         {/* Conditional rendering based on `this.state` */}
         {!this.state.ideas.length && <h2>Hey! Add some thoughts to make bubbles 🧼</h2>}
-        <Ideas ideas={this.state.ideas} />
+        <Ideas ideas={this.state.ideas} deleteIdea={this.deleteIdea} />
       </main>
     )
   }
