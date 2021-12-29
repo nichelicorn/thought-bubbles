@@ -34,18 +34,22 @@ class App extends Component {
     }
   }
 
+  addIdea = ( newIdea ) => {
+    this.setState({ ideas: [...this.state.ideas, newIdea] });
+  }
+
   render() {
     return (
       <main className="App">
         <h1>Thought Bubbles</h1>
-        <Form></Form>
+        <Form addIdea={this.addIdea} />
         {/* Test code for looking at the way props interact between parent / child components */}
         {/* <Ideas name="Ahsoka" blade="green"/>
         <Ideas name="Anakin" blade="blue"/>
         <Ideas name="Mace" blade="purple" /> */}
         {/* Conditional rendering based on `this.state` */}
         {!this.state.ideas.length && <h2>Hey! Add some thoughts to make bubbles 🧼</h2>}
-        <Ideas ideas={this.state.ideas}/>
+        <Ideas ideas={this.state.ideas} />
       </main>
     )
   }
