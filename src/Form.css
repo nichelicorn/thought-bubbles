@@ -29,7 +29,6 @@ form {
   border-radius: 50%;
   display: block;
   position: absolute;
-  /* z-index: -1; */
 }
 
 .bubble::before {
