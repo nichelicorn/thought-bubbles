@@ -1,12 +1,15 @@
 /* Styles for Card components */
 
 .card {
-  /* .box-sizing: border-box;
-  border: 3px solid seagreen;
-  padding: 1rem; */
-  color: black;
   display: flex;
+  color: black;
   flex-direction: column;
-  /* width: fit-content; */
+  position: relative;
 
+  max-width: 30rem;
+  max-height: 10rem;
+}
+
+.title {
+  font-family: "Bubblegum sans", cursive;
 }

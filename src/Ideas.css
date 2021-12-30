@@ -2,9 +2,10 @@
 
 .ideas-wrap {
   display: flex;
-  align-items: center;
+  flex-flow: row wrap;
+  /* align-items: center; */
   justify-content: center;
-  position: relative;
+  /* position: relative; */
   background-color: aquamarine;
   border-radius: 2rem;
   height: 100%;
