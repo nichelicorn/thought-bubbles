@@ -1,9 +1,14 @@
+/* Styles for the Thought Bubbles App */
+
 body {
-  background-color: aliceblue;
+  background-color: indigo;
+  color: aliceblue;
   margin: auto;
 }
 
 .App {
+  display: flex;
+  flex-direction: column;
   padding: 1rem;
   text-align: center;
 }

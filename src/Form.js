@@ -18,7 +18,7 @@ class Form extends Component {
     event.preventDefault(); // prevents the page from refreshing when the form is submitted
     const newIdea = {
       id: Date.now(),
-      ...this.state // spreads in the title and description
+      ...this.state // spreads in the new idea object created in state
     }
     this.props.addIdea(newIdea); // uses the addIdea method from the App, passed to Form as a prop
     this.clearInputs();
@@ -30,7 +30,7 @@ class Form extends Component {
 
   render() {
     return (
-      <form>
+      <form className="bubble-maker">
         <input 
           type="text"
           placeholder="title"
@@ -47,8 +47,8 @@ class Form extends Component {
           onChange={event => this.handleChange(event)}
         />
 
-        <button onClick={event => { this.submitIdea(event) }} >
-          blow bubbles
+        <button onClick={event => { this.submitIdea(event) }} className="bubble">
+          blow a bubble
         </button>
       </form>
     )

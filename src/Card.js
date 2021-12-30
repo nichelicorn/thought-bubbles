@@ -3,7 +3,7 @@ import "./Card.css";
 
 const Card = ( { title, description, id, deleteIdea } ) => {
   return (
-    <div className="card">
+    <div className="card bubble">
       <h3>{title}</h3>
       <p>{description}</p>
       <button onClick={() => deleteIdea(id)} >🗑</button>

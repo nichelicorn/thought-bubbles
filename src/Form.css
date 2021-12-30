@@ -1,12 +1,68 @@
 /* Styles for the Form component */
 
 form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   margin: auto;
 }
 
-input, button {
-  margin: 5px;
-  width: 30%;
-  border: 2px solid salmon;
+.bubble-maker {
+  background-color: fuchsia;
+  padding: 1rem;
+  border-radius: 2rem;
+}
+
+.bubble {
+  display: flex;
+  background-color: ghostwhite;
+  padding: 1rem;
+  border-radius: 2rem;
+  min-width: 30%;
+  max-width: 80%;
+  min-height: 3rem;
+  margin: 1.5rem;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.bubble:before,
+.bubble:after {
+  content: "";
+  background-color: ghostwhite;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  z-index: -1;
+}
+
+.bubble::before {
+  width: 2rem;
+  height: 2rem;
+  top: -1rem;
+  left: 2rem;
+  box-shadow: -50px 30px 0 -12px ghostwhite;
+}
+
+.bubble::after {
+  bottom: -1rem;
+  right: 2rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  box-shadow: 2.5rem -2rem 0 0 #ghostwhite,
+             -2rem -.5rem 0 -.5rem #ghostwhite,
+             -1.5rem 1rem 0 -.5rem #ghostwhite,
+             -.5rem 2rem 0 -1rem #ghostwhite;
+}
+
+input, 
+button {
+  color: rgb(13, 0, 23);
+  margin: .5rem;
+  /* width: 30%; */
+  /* border: 2px solid salmon; */
   font-size: 18px;
 }

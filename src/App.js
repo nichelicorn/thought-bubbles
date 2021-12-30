@@ -12,7 +12,23 @@ class App extends Component {
     super();
     // this, here, is binding the state / relevant data application, to the App component
     this.state = {
-      ideas: []
+      ideas: [
+        {
+          id: 1,
+          title: "pickle",
+          description: "dill"
+        },
+        {
+          id: 2,
+          title: "pickle",
+          description: "gherkin"
+        },
+        {
+          id: 3,
+          title: "pickle",
+          description: "garlic dill"
+        }
+      ]
     }
   }
 
