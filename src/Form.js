@@ -21,7 +21,6 @@ class Form extends Component {
       ...this.state // spreads in the title and description
     }
     this.props.addIdea(newIdea); // uses the addIdea method from the App, passed to Form as a prop
-    this.props.setStorage();
     this.clearInputs();
   }
 
@@ -48,11 +47,7 @@ class Form extends Component {
           onChange={event => this.handleChange(event)}
         />
 
-        <button onClick={event => {
-            this.submitIdea(event);
-
-            }
-            } >
+        <button onClick={event => { this.submitIdea(event) }} >
           blow bubbles
         </button>
       </form>

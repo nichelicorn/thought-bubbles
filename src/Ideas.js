@@ -4,7 +4,7 @@ import React from "react";
 import Card from "./Card.js"
 import "./Ideas.css";
 
-const Ideas = ( { ideas, deleteIdea } ) => {
+const Ideas = ( { ideas, deleteIdea, setStorage } ) => {
 
   // 👇 this was kind of interesting ... the ideas are an object, even though they are an Array; might read into this later
   // console.log("Ideas component ideas", ideas); // logs Array []
@@ -35,6 +35,7 @@ const Ideas = ( { ideas, deleteIdea } ) => {
   return (
     <div className="ideas-wrap">
       {ideaCards}
+      {setStorage()}
     </div>
   )
 }
