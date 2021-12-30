@@ -31,7 +31,7 @@ class Form extends Component {
   render() {
     return (
       <form className="bubble-maker">
-        <input 
+        <input className="bubb-input"
           type="text"
           placeholder="title"
           name="title"
@@ -39,7 +39,7 @@ class Form extends Component {
           onChange={event => this.handleChange(event)}
         />
 
-        <input 
+        <input className="bubb-input"
           type="text"
           placeholder="description"
           name="description"
@@ -47,7 +47,7 @@ class Form extends Component {
           onChange={event => this.handleChange(event)}
         />
 
-        <button onClick={event => { this.submitIdea(event) }} className="bubble">
+        <button onClick={event => { this.submitIdea(event) }} className="bubble btn">
           blow a bubble
         </button>
       </form>

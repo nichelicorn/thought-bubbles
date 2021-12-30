@@ -10,23 +10,16 @@ form {
 
 .bubble-maker {
   background-color: fuchsia;
-  padding: 1rem;
+  padding: 2rem;
   border-radius: 2rem;
 }
 
 .bubble {
-  display: flex;
   background-color: ghostwhite;
   padding: 1rem;
-  border-radius: 2rem;
-  min-width: 30%;
-  max-width: 80%;
-  min-height: 3rem;
+  border-radius: 4rem;
   margin: 1.5rem;
   position: relative;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
 }
 
 .bubble:before,
@@ -36,7 +29,7 @@ form {
   border-radius: 50%;
   display: block;
   position: absolute;
-  z-index: -1;
+  /* z-index: -1; */
 }
 
 .bubble::before {
@@ -44,7 +37,7 @@ form {
   height: 2rem;
   top: -1rem;
   left: 2rem;
-  box-shadow: -50px 30px 0 -12px ghostwhite;
+  box-shadow: -3rem 2rem 0 -.3rem ghostwhite;
 }
 
 .bubble::after {
@@ -58,11 +51,9 @@ form {
              -.5rem 2rem 0 -1rem #ghostwhite;
 }
 
-input, 
-button {
+.bubb-input, 
+.btn {
   color: rgb(13, 0, 23);
-  margin: .5rem;
-  /* width: 30%; */
-  /* border: 2px solid salmon; */
   font-size: 18px;
+  margin: .5rem;
 }
