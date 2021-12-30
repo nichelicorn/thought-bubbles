@@ -8,6 +8,7 @@ body {
 
 .App {
   display: flex;
+  height: 100vh;
   flex-direction: column;
   padding: 1rem;
   text-align: center;

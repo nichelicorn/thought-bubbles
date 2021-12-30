@@ -1,4 +1,4 @@
-/* Styling for Card component */
+/* Styles for Card components */
 
 .card {
   /* .box-sizing: border-box;
@@ -8,5 +8,5 @@
   display: flex;
   flex-direction: column;
   /* width: fit-content; */
-  
+
 }
