@@ -8,6 +8,11 @@ Seems like a better way forward, at least for me! So, I hope you enjoy using thi
 
 Notes about React and other development projects can be found in [this](link to react-nichelicorn-dev) repo.
 
+## Development Notes
+* This project could use a little more work 🚧
+  - Add *pop* animation when an idea is deleted
+  - Add localStorage so ideas can persist across sessions
+
 ### Resources
 No developer makes anything alone. I'm grateful to have the work of these developers to help make this project!
 * [React: Our First IdeaBox by Turing School](https://frontend.turing.edu/lessons/module-3/react-2-the-how.html)
