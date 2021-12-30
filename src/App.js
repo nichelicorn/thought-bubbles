@@ -1,5 +1,4 @@
-// This component displays a collection of cards, each displaying a discrete idea
-// Ideas are created by the user in the form above the card display
+// The App component, where everything is put together
 
 import React, { Component } from "react";
 import Form from "./Form";
@@ -8,9 +7,7 @@ import "./App.css";
 
 class App extends Component {
   constructor() {
-    // Extend all Component methods / properties to the App
     super();
-    // this, here, is binding the state / relevant data application, to the App component
     this.state = {
       ideas: []
     }
@@ -21,14 +18,13 @@ class App extends Component {
   }
 
   deleteIdea = ( id ) => {
-    // delete idea from state based on id
+    // deletes an idea from state based on id
     const filteredIdeas = this.state.ideas.filter (idea => idea.id !== id);
 
     this.setState({ ideas: filteredIdeas });
   }
 
-  setStorage = () => { // localStorage is being reset to an empty array each time the page is refreshed
-    // console.log("something is happening! 🧐 ");
+  setStorage = () => {
     const storedIdeas = JSON.stringify(this.state.ideas);
     console.log("storedIdeas <>>>", storedIdeas);
     localStorage.setItem("ideas", storedIdeas);

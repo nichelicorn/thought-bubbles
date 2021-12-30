@@ -1,3 +1,5 @@
+// The Form component, where a user inputs an idea and updates state
+
 import React, { Component } from "react";
 import "./Form.css";
 
@@ -15,7 +17,7 @@ class Form extends Component {
   }
 
   submitIdea = event => {
-    event.preventDefault(); // prevents the page from refreshing when the form is submitted
+    event.preventDefault();
     const newIdea = {
       id: Date.now(),
       ...this.state // spreads in the new idea object created in state

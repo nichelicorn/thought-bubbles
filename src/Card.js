@@ -1,3 +1,5 @@
+// The Card component, which sets the layout for each idea card
+
 import React from "react";
 import "./Card.css";
 
