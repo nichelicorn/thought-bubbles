@@ -45,7 +45,7 @@ class App extends Component {
   render() {
     return (
       <main className="App">
-        <h1>thought bubbles</h1>
+        <h1>thought bubbles 💭</h1>
         <Form addIdea={this.addIdea} />
         {!this.state.ideas.length && <h2>Hey! Add some thoughts to make bubbles 🧼</h2>}
         <Ideas ideas={this.state.ideas} deleteIdea={this.deleteIdea} setStorage={this.setStorage} />
