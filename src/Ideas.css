@@ -6,9 +6,10 @@
   /* align-items: center; */
   justify-content: center;
   /* position: relative; */
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
   border-radius: 2rem;
   height: 100%;
+  /* height: auto; */
   margin: 1rem;
   padding: 1.2rem;
   /* display: grid; */

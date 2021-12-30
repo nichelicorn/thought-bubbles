@@ -12,23 +12,7 @@ class App extends Component {
     super();
     // this, here, is binding the state / relevant data application, to the App component
     this.state = {
-      ideas: [
-        {
-          id: 1,
-          title: "pickle",
-          description: "dill"
-        },
-        {
-          id: 2,
-          title: "pickle",
-          description: "gherkin"
-        },
-        {
-          id: 3,
-          title: "pickle",
-          description: "garlic dill"
-        }
-      ]
+      ideas: []
     }
   }
 
@@ -62,6 +46,7 @@ class App extends Component {
     return (
       <main className="App">
         <h1>thought bubbles 💭</h1>
+        <p>Add some thoughts, then pop the bubbles!</p>
         <Form addIdea={this.addIdea} />
         {!this.state.ideas.length && <h2>Hey! Add some thoughts to make bubbles 🧼</h2>}
         <Ideas ideas={this.state.ideas} deleteIdea={this.deleteIdea} setStorage={this.setStorage} />
